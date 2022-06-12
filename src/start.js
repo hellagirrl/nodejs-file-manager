@@ -4,7 +4,7 @@ import { stdin as input, stdout as output, argv } from 'process';
 // import custom modules
 import * as directory from './directory.js';
 import * as read from './read.js';
-
+import * as create from './create.js';
 
 const rl = readline.createInterface({ input, output });
 const username = argv[2].slice(11);
@@ -45,6 +45,11 @@ async function main() {
     if (userInput === 'ls') {
       read.listFilesInFolder(currentDirectory);
     };
+
+    if (userInput.startsWith('add')) {
+      let fileToCreate = userInput.slice(3) + '.txt';
+      create.createFile(currentDirectory, fileToCreate);
+    }
 
     if (userInput === '.exit') rl.close()
 
