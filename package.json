@@ -1,0 +1,21 @@
+{
+  "name": "node-js-file-manager",
+  "version": "1.0.0",
+  "description": "NodeJS File Manager",
+  "type": "module",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/start.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hellagirrl/nodejs-file-manager.git"
+  },
+  "author": "kat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hellagirrl/nodejs-file-manager/issues"
+  },
+  "homepage": "https://github.com/hellagirrl/nodejs-file-manager#readme"
+}
